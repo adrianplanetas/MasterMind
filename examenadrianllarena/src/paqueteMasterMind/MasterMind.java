@@ -114,6 +114,9 @@ pedirJugada (i);
 			tablero[j-1][i] = Consola.leeChar();
 		}
 	}
+	private void examen(int j) {
+		System.out.println("examen ende adrian llarena");
+	}
 	
 	private boolean comprobarJugada (int j) {
 		int i,k;
