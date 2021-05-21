@@ -117,6 +117,9 @@ pedirJugada (i);
 	private void examen(int j) {
 		System.out.println("examen ende adrian llarena");
 	}
+	private void pruebasubida(int j) {
+		System.out.println("examen ende adrian llarena");
+	}
 	
 	private boolean comprobarJugada (int j) {
 		int i,k;
