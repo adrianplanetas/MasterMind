@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class MasterMind {
 
-	private static final String INICIALCOLOR = "Escribe la inicial del color número ";
+	private static final String INICIALCOLOR = "Escribe la inicial del color nÃºmero ";
 	private char [] combinacion;
 	private char [][] tablero;
 	private long [][] resultado;
@@ -21,7 +21,9 @@ public class MasterMind {
 		inicializarResultado ();
 //		numPartidas++;
 	}
-	
+	private void cambiogithub () {
+		System.out.println ("hola");
+	}
 	private void generarCombinacion () {
 		int i;
 		for (i=0; i<combinacion.length; i++)
@@ -98,10 +100,10 @@ pedirJugada (i);
 	private boolean visualizarSalida(boolean acertada, int i, String newParam) {
 		System.out.println ();
 		if (acertada) {
-			quebien = "¡ENHORABUENA! Has acertado la combinación en ";
-			System.out.println (quebien + (i-1) +" intentos en la partida nº " + numPartidas);
+			quebien = "Â¡ENHORABUENA! Has acertado la combinaciÃ³n en ";
+			System.out.println (quebien + (i-1) +" intentos en la partida nÂº " + numPartidas);
 		} else {
-			losentimos = "LO SENTIMOS. No has conseguido acertar la combinación en la partida nº ";
+			losentimos = "LO SENTIMOS. No has conseguido acertar la combinaciÃ³n en la partida nÂº ";
 			System.out.println (losentimos + numPartidas);
 		}
 		return acertada;
@@ -123,15 +125,15 @@ pedirJugada (i);
 	
 	private boolean comprobarJugada (int j) {
 		int i,k;
-	// Las siguientes 8 variables llevarán el número de muertos de cada color
+	// Las siguientes 8 variables llevarÃ¡n el nÃºmero de muertos de cada color
 		int numRM = 0, numVM = 0, numAM = 0, numBM = 0;
 		int numNM = 0, numMM = 0, numGM = 0, numSM = 0;
-	// Las siguientes 8 variables tendrán el número de piezas del mismo color
-	// que hay en la combinación a adivinar
+	// Las siguientes 8 variables tendrÃ¡n el nÃºmero de piezas del mismo color
+	// que hay en la combinaciÃ³n a adivinar
 		int numRComb = 0, numVComb = 0, numAComb = 0, numBComb = 0;
 		int numNComb = 0, numMComb = 0, numGComb = 0, numSComb = 0;
-	// Las siguientes 8 variables tendrán el número de piezas del mismo color
-	// que hay en la jugada que se está comprobando
+	// Las siguientes 8 variables tendrÃ¡n el nÃºmero de piezas del mismo color
+	// que hay en la jugada que se estÃ¡ comprobando
 		int numRJugada = 0, numVJugada = 0, numAJugada = 0, numBJugada = 0;
 		int numNJugada = 0, numMJugada = 0, numGJugada = 0, numSJugada = 0;
 		
